@@ -7,5 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 5.times do |i|
-
+  Task.create(
+    title: Faker::Verb.base,
+    details: Faker::Quote.famous_last_words
+  )
 end
