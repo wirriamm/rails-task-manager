@@ -4,7 +4,7 @@
   <% @tasks.each do |task| %>
     <% status = task.completed ? "completed" : "incomplete" %>
     <li class=<%= status %>>
-      <%= link_to task.title, tasks_path(task.id) %>
+      <%= link_to task.title, task_path(task) %>
     </li>
   <% end %>
 </ul>

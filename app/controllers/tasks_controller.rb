@@ -5,5 +5,6 @@ class TasksController < ApplicationController
 
   def show
     @task = Task.find(params[:id])
+    @status = @task.completed ? 'completed' : 'not completed yet'
   end
 end
